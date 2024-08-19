@@ -1,0 +1,15 @@
+.section-media{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section{
+    padding: 10px;
+}
+
+.footer-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

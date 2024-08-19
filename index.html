@@ -1,0 +1,190 @@
+<!-- Editar multiples partes del texto repetidas CTRL + D -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 - Joaquin Cuello</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head> 
+<body>
+    <header>
+        <h1 class="display-4">Trabajo practico: Front End- HTML</h1>
+        <p class="lead">El objetivo de este trabajo práctico es que los estudiantes adquieran experiencia en la creación de una página HTML básica utilizando los elementos HTML y etiquetas básicas que se han visto en clase.</p>
+        <nav>
+            <!-- ul>li*6>a[href="#"] -->
+            <ul class="nav-flex-column">
+                <li class="nav-link"><a href="#seccion1">1. Estructura Básica del Documento HTML</a></li>
+                <li class="nav-link"><a href="#seccion2">2. Encabezados y Propiedades del texto</a></li>
+                <li class="nav-link"><a href="#seccion3">3. Divisiones y agrupaciones de contenido</a></li>
+                <li class="nav-link"><a href="#seccion4">4. Enlaces y Listas</a></li>
+                <li class="nav-link"><a href="#seccion5">5. Elementos multimedia</a></li>
+                <li class="nav-link"><a href="#seccion6">6. Tablas</a></li>
+                <li class="nav-link"><a href="#seccion7">7. Formulario</a></li>
+                <li class="nav-link"><a href="" class="inf-complementaria">Informacion complementaria: &lt;article&gt;</a></li>
+                <span></span>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="seccion1">
+            <h2>1. Estructura Básica del Documento HTML</h2>
+            <p>Este documento HTML tiene una estructura basica que incluye la declaracion de DOCTYPE, etiquetas y un titulo</p>
+        </section>
+        <section id="seccion2">
+            <div>
+                <h2>2. Encabezados y Propiedades del Texto</h2>
+                <p style="font-weight: bold;">Este es un texto en negrita</p>
+                <p style="font-style: italic;">Este es un texto en cursiva</p>
+                <p style="text-decoration: underline;">Este es un texto subrayado</p>
+            </div>
+        </section>
+        <section id="seccion3">
+            <h2>3. Divisiones y agrupaciones de contenido</h2>
+            <div>
+                <h3>Seccion 1 con</h3>
+                <p>Contenido de la primera seccion agrupada en un div.</p>
+            </div>
+            <div>
+                <h4>Seccion 2</h4>
+                <p>Contenido de la segunda seccion agrupada en un div.</p>
+            </div>
+        </section>
+        <section id="seccion4">
+            <h2>4. Enlaces y Listas</h2>
+            <p>Visita nuestro <a href="#">sitio web</a> para más informacion</p>
+            <h5><u>Enlaces internos :</u></h5>
+            <div>
+                <nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://campus.frm.utn.edu.ar/">Campus UTN-FRM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="https://github.com/Kondder">Perfil de Github</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h6><u>Lista desordenada</u></h6>
+                <ul class="list-group">
+                    <li class="list-group-item">Primer ítem de una lista desordenada</li>
+                    <li class="list-group-item">Segundo ítem de una lista desordenada</li>
+                </ul>
+            </div>
+            <div>
+                <h6><u>Lista ordenadas</u></h6>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Primer ítem de una lista ordenada</li>
+                    <li class="list-group-item">Segundo ítem de una lista ordenada</li>
+                </ol>
+            </div>
+        </section>
+        <section id="seccion5">
+            <h2>5. Elementos multimedia</h2>
+            <div class="section-media">
+                <!-- Etiqueta figure y figurecaption para semantica de elementos multimedia -->
+                <figure>
+                    <img src="gato.jpg" alt="imagen de gato" style="width: 300px; height: auto;">
+                    <figcaption>Foto</figcaption>
+                </figure>
+                <figure>
+                    <video style="width: 300px; height: auto;" controls>
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        <source src="mov_bbb.mp4" type="video/ogg">
+                      Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Video</figcaption>
+                </figure>
+                <figure>
+                    <audio src="horse.ogv" controls></audio>
+                    <figcaption>Audio</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="seccion6" class="table">
+            <h2>6. Tablas</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Columna 1</th>
+                        <th scope="col">Columna 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="seccion7" class="container mt-5">
+            <h2>7. Formulario</h2>
+            <!-- action, method, submit -->
+            <form action="datosFormulario.html" method="get" class="form-example">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input class="form-control" type="text" name="name" id="name" required />
+                </div >
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input class="form-control" type="email" name="email" id="email" required />
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Enviar">
+            </form>
+        </section>
+        <article id="inf-complementaria">
+            <header>
+                <h1 class="display-4">Informacion complementaria</h1>
+                <p class="lead">Entendiendo la etiqueta html <i>&lt;article&gt;</i></p>
+            </header>
+            <main>
+                <section>
+                    <p>El article es definido como un componente de la página de contenido independiente, esto implica que esta etiqueta pueda tener un header  y un footer propios.</p>
+                    <p>Se puede identificar la necesidad de usarla si el contenido tiene sentido fuera del contexto de la pagina o tiene sentido por si mismo.</p>
+                    <p>Esta seccion: "<strong>Informacion complementaria</strong>", está contenida en una etiqueta <i>&lt;article&gt;</i>. Es independiente a la informacion requerida por el trabajo practico.</p>
+                </section>
+                <section>
+                    <h4 class="display-6"><u>Ejemplo de usos</u></h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Comentarios de usuarios</li>
+                        <li class="list-group-item">Estadisticas de clima</li>
+                        <li class="list-group-item">Publicaciones de Usuarios</li>
+                    </ul>
+                </section>
+            </main>
+            <footer class="py-3">
+                <p>Fuente de informacion: <a target="_blank" href="https://www.espai.es/blog/2015/01/cuando-debemos-poner-section-y-cuando-article/">Link</a></p>
+            </footer>
+        </article>
+    </main>
+    <footer class="py-3 bg-dark text-white">
+        <div class="footer-div">
+            <section>
+                <p class="mb-0">Profesor: Alberto Cortez</p>
+                <p class="mb-0">Alumno: Joaquin Cuello</p>
+                <p class="mb-0">Año: 2024</p></section>
+            </section>
+            <section>
+                <p>HTML</p>
+                <p>Bootstrap. Framework: CSS</p>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
